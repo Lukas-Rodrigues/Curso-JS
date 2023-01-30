@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var array = [1,2,3,4,5,6]
+        console.log(array.length);
+
+        array.push(7);
+        console.log(array);
+        
+        array.pop();
+        console.log(array);
+
+        //começo do array
+        array.unshift(0)
+        console.log(array);
+
+        //remover do começo
+        array.shift()
+        console.log(array);
+
+
+        // pega um indice que quer adicionar o elemento, no segundo parametro é para saber quantos elementos ver quer deletar 
+        // e o terceito é qual vc quer add no lugar
+
+        array.splice(2,0,500);
+        console.log(array);
+
+
+        //join
+        var arr2 = ['Lucas',"Rodrigues","Silva"]
+        console.log(arr2.join(" "))
+    </script>
+</body>
+</html>
